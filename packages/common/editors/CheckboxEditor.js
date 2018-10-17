@@ -22,7 +22,7 @@ class CheckboxEditor extends React.Component {
     let checkboxName = 'checkbox' + this.props.rowIdx;
     return (
       <div className="react-grid-checkbox-container checkbox-align" onClick={this.handleChange}>
-          <input className="react-grid-checkbox" type="checkbox" name={checkboxName} checked={checked} />
+          <input className="react-grid-checkbox" type="checkbox" name={checkboxName} checked={checked} defaultChecked={false} />
           <label htmlFor={checkboxName} className="react-grid-checkbox-label"></label>
       </div>);
   }
